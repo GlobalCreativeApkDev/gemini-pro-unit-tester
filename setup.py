@@ -30,7 +30,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "main=main:main",
+            "gemini-pro-unit-tester=main:main",
         ]
     }
 )
