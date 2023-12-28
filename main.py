@@ -108,11 +108,11 @@ def main() -> int:
 
     while True:
         clear()
-        language: str = input("What programming language do you want to run unit files in? ")
+        language: str = input("What programming language do you want to run unit tests in? ")
         convo.send_message("Is " + str(language) + " a programming language (one word response only)?")
         language_check_answer: str = str(convo.last.text).upper()
         while language_check_answer != "YES":
-            language: str = input("Sorry, invalid input! What programming language do you want to run unit files in? ")
+            language: str = input("Sorry, invalid input! What programming language do you want to run unit tests in? ")
             convo.send_message("Is " + str(language) + " a programming language (one word response only)?")
             language_check_answer = str(convo.last.text).upper()
 
@@ -153,7 +153,7 @@ def main() -> int:
         unit_test_file_name: str = str(file_to_test.split(".")[0]) + "_Tests"
         unit_test_file_path: str = str(unit_test_file_name) + str(unit_test_file_extension)
 
-        # Writing test code to unit files file
+        # Writing test code to unit test file
         test_file = open(str(unit_test_file_path), "w")
         test_file.write(unit_tests_code)
         test_file.close()
@@ -170,7 +170,7 @@ def main() -> int:
         # Checking whether the user wants to continue unit testing or not.
         print("Enter 'Y' for yes.")
         print("Enter anything else for no.")
-        continue_testing: str = input("Do you want to continue running unit files? ")
+        continue_testing: str = input("Do you want to continue running unit tests? ")
         if continue_testing != "Y":
             return 0
 

@@ -5,7 +5,8 @@ allows you to do so easily!
 
 # Source Code
 
-The source code of the application **Gemini Pro Unit Tester** is available in
+The source code of the application **Gemini Pro Unit Tester** is available in 
+[Source Code](https://github.com/GlobalCreativeApkDev/gemini-pro-unit-tester/blob/master/main.py).
 
 # Installation
 
@@ -41,6 +42,20 @@ You will then be asked to input the following values.
 4. Max output tokens - at least 1
 
 The following screenshot shows what is displayed after inputting the mentioned values.
+
+![Unit Testing](images/Unit%20Testing.png)
+
+You are required to enter the following values.
+
+1. The programming language you want to run unit tests in - must be an existing programming language.
+2. The path of the file you want to test - the file mentioned must be a file of the programming language you entered in 
+step number 1 above (i.e., if you entered "Python" in step 1, the path of the file you entered must be a Python file).
+
+Once you enter the values mentioned above, the application will display the command used to run unit tests, together
+with the test results. Then, you will be asked whether you still want to continue unit testing or not. If you enter
+'Y', you will be redirected to an application window like in screenshot above. Else, you will exit the application.
+
+![Unit Test Results](images/Unit%20Test%20Results.png)
 
 # Progress
 
