@@ -59,7 +59,7 @@ with the test results. Then, you will be asked whether you still want to continu
 
 # Progress
 
-1. Supports creating and running unit tests for one file. (ongoing)
+1. Supports creating and running unit tests for one file. (done)
 2. Supports creation of unit tests based on code in multiple files. (pending)
 
 # Version History
